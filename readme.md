@@ -1,3 +1,3 @@
 # Shopping Cart
 
-A simple JS project on shopping cart
+A simple JS project on shopping cart helloooo
