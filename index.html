@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping list</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="logo.png" alt="logo" class="logo" />
+        <h1>Shopping List</h1>
+      </header>
+      <form id="item-form">
+        <div class="form-control">
+          <input
+            type="text"
+            placeholder="Enter Item"
+            class="form-input"
+            id="item-input"
+            name="item"
+          />
+        </div>
+        <div class="form-control">
+          <button type="submit" class="add-btn">
+            <i class="fa-solid fa-plus"></i>
+            Add Item
+          </button>
+        </div>
+      </form>
+      <div class="filter">
+        <input
+          type="text"
+          placeholder="Filter Items"
+          class="form-input-filter"
+          id="filter"
+          name="filter"
+        />
+      </div>
+
+      <ul id="item-list" class="items">
+        <!-- <li>
+          Apple
+          <button class="remove-btn text-red">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </li>
+        <li>
+          Mango
+          <button class="remove-btn text-red">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </li>
+        <li>
+          Banana
+          <button class="remove-btn text-red">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </li>
+        <li>
+          Eggs
+          <button class="remove-btn text-red">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </li>
+        <li>
+          Eggnog
+          <button class="remove-btn text-red">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </li> -->
+      </ul>
+      <button id="clear" type="submit" class="clear-all">Clear All</button>
+    </div>
+
+    <!-- Testing Local and Session storage  -->
+    <!-- <button type="submit" id="local-storage">Add Local Storage</button>
+    <button type="submit" id="clear-local-storage">Clear Local</button>
+    <button type="submit" id="session-storage">Add Session Storage</button>
+    <button type="submit" id="clear-session-storage">Clear Session</button> -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
